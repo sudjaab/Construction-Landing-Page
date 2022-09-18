@@ -100,7 +100,7 @@ nav {
 	height: 90px;
 	color: #252c30;
 	background-color: white;
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .nav-container {
 	width: 80%;
@@ -807,12 +807,22 @@ ul li:hover,
 	.nav-grid {
 		grid-template-columns: 260px auto 90px;
 	}
+	.gallery-menus {
+		margin-top: 55px;
+	}
+
+	.gallery-images {
+		margin-top: -20px;
+	}
 	.welcome-container,
 	.team-members-card-grid {
 		width: 85%;
 	}
 	.client-review-card {
 		width: 70%;
+	}
+	.client-image {
+		width: 13%;
 	}
 	.news-cards {
 		width: 80%;
@@ -853,6 +863,9 @@ ul li:hover,
 	.service-right-content h2 {
 		margin-top: 50px;
 	}
+	.counter {
+		background-position-y: -200px;
+	}
 	.counter-container {
 		width: 97%;
 	}
@@ -872,7 +885,7 @@ ul li:hover,
 		width: 90%;
 	}
 	.gallery-images {
-		margin-top: 0px;
+		margin-top: -10px;
 	}
 	.gallery-images-grid {
 		grid-template-columns: 1fr 1fr;
@@ -914,6 +927,9 @@ ul li:hover,
 	.client-review-card {
 		width: 80%;
 	}
+	.client-image {
+		width: 16%;
+	}
 	.news-construction {
 		height: 1580px;
 	}
@@ -930,7 +946,7 @@ ul li:hover,
 		height: 100%;
 	}
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
 	.hamburger {
 		display: inline-block;
 		margin: 1rem;
@@ -981,9 +997,202 @@ ul li:hover,
 	.email span {
 		width: auto;
 	}
+	.counter {
+		background-position-y: -180px;
+	}
 	.counter-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-row-gap: 25px;
+	}
+	.intro {
+		display: none;
+	}
+	.offering-and-gallery {
+		height: 1300px;
+	}
+	.gallery-menus {
+		margin-top: 40px;
+	}
+	.gallery-menus-grid ul {
+		display: flex;
+		flex-direction: row;
+	}
+	.gallery-menus-grid ul li {
+		margin: 10px;
+	}
+	.gallery-images {
+		margin-top: -80px;
+	}
+	.client-review-card {
+		padding: 70px 90px;
+	}
+	.client-image {
+		width: 24%;
+	}
+	.service-item-icon {
+		align-items: flex-start;
+	}
+}
+@media screen and (max-width: 480px) {
+	.welcome-and-services {
+		height: 2550px;
+	}
+	.welcome-cards-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+	.welcome-card-item {
+		height: 250px;
+	}
+	.service-item-icon {
+		margin-right: 25px;
+	}
+	.counter {
+		background-position-y: -80px;
+	}
+	.offering-and-gallery {
+		height: 1480px;
+	}
+	.gallery-menus {
+		margin-top: 40px;
+	}
+
+	.gallery-menus-grid ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.gallery-images {
+		margin-top: -30px;
+	}
+	.gallery-images-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.gallery-image-1,
+	.gallery-image-2,
+	.gallery-image-3,
+	.gallery-image-4 {
+		height: 300px;
+	}
+	.gallery-image-1 {
+		background-position-y: -120px;
+	}
+	.gallery-image-3 {
+		background-position-y: -180px;
+	}
+	.gallery-image-4 {
+		background-position-y: -100px;
+	}
+
+	.team-members {
+		/* height: 1100px; */
+		margin-top: 140px;
+	}
+	.team-members-card-grid {
+		width: 85%;
+	}
+	.member-card-left {
+		width: 60%;
+	}
+	.member-image {
+		width: 50%;
+	}
+	.client-review-card {
+		padding: 60px 50px;
+	}
+	.news-card-left {
+		display: none;
+	}
+	.subscribe-input input {
+		width: 220px;
+		padding-left: 20px;
+	}
+
+	.subscribe-input button {
+		width: 150px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.welcome-and-services {
+		height: 2680px;
+	}
+
+	.counter {
+		height: 500px;
+		background-position-y: 0;
+	}
+	.counter-grid {
+		grid-template-columns: none;
+		grid-row-gap: 30px;
+	}
+	.offering-and-gallery {
+		height: 1900px;
+	}
+	.offering-items-grid {
+		grid-template-columns: 1fr;
+	}
+	.offering-item-icon {
+		width: 50%;
+		margin-right: 0;
+	}
+	.gallery-images {
+		margin-top: -50px;
+	}
+	.gallery-images-grid {
+		grid-template-columns: 1fr;
+	}
+	.gallery-image-1,
+	.gallery-image-2,
+	.gallery-image-3,
+	.gallery-image-4 {
+		height: 200px;
+	}
+	.gallery-image-1 {
+		background-position-y: -180px;
+	}
+	.gallery-image-2 {
+		background-position-y: -150px;
+	}
+	.gallery-image-3 {
+		background-position-y: -280px;
+	}
+	.gallery-image-4 {
+		background-position-y: -200px;
+	}
+	.team-members {
+		height: 1000px;
+		margin-top: 350px;
+	}
+	.member-card-right {
+		width: 60%;
+		height: 100%;
+	}
+
+	.member-card-left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30%;
+		height: 100%;
+	}
+
+	.member-image {
+		width: 60%;
+	}
+	.client {
+		height: 900px;
+	}
+	.client-review-card {
+		height: 540px;
+	}
+	.subscribe-input input {
+		width: 200px;
+		padding-left: 15px;
+	}
+
+	.subscribe-input button {
+		width: 125px;
 	}
 }
